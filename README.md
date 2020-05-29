@@ -3,24 +3,20 @@
 
 
 __Authors:__
-[Ellen J. Coombs](mailto:ellen.coombs.14@ucl.ac.uk)
-[Julien Clavel](https://github.com/JClavel)
-[Travis Park](https://github.com/travispark)
-Morgan Churchill 
+[Ellen J. Coombs](mailto:ellen.coombs.14@ucl.ac.uk),
+[Julien Clavel](https://github.com/JClavel),
+[Travis Park](https://github.com/travispark),
+Morgan Churchill,
 Anjali Goswami 
 
 __To cite the paper__: 
 > 
-
 Available at: 
-
 If using any of this code or data please cite the paper above and the repo
 __To cite this repo__: 
 > 
 Github link + Zenodo
-
 Zenodo badge 
-
 
 ## Data :bar_chart: :chart_with_downwards_trend: 
 
@@ -32,17 +28,14 @@ The data provided here are:
 
 ## Analysis :chart_with_upwards_trend: :whale2:
 In this repository you will find raw data (.csv files), analyses (details on analyses), code for analyses (code supplied as .R files)
- 
  :file_folder:
 * **Raw data**
 - CSV name and description 
 - CSV name and description 
 - CSV name and description 
-
  :file_folder:
 * **Analyses**
 - Details on analyses run e.g. links to papers, packages 
-
  :file_folder:
 * **Code for analyses**
 `Binary-ASCII-ply.R`
@@ -55,7 +48,7 @@ In this repository you will find raw data (.csv files), analyses (details on ana
 `Phylo-MANOVAs`
 
 ## License :page_with_curl:
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/EllenJCoombs/) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/EllenJCoombs/Asymmetry-evolution-cetaceans/blob/master/LICENSE) file for details
 
 ## Session Info :clipboard:
 For reproducibility purposes, here is the output of `devtools::session_info()` used to perform the analyses in the publication. 

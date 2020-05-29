@@ -25,9 +25,9 @@ data <- Reordered
 
 ########################################
 #                                      #
-#          HAD TO REARRANGE TREE       #
+#   REARRANGE TREE - if required       #
 #                                      #
-#######################################
+########################################
 
 #Need to convert tree from polytomy to binary - remove polytomies 
 subtree <- multi2di(tree, random = TRUE)

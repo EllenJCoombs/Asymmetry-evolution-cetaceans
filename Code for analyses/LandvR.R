@@ -132,7 +132,7 @@ PCA <- plotTangentSpace(arranged$coords, legend=TRUE)
 
 setwd("X:xxxxxxx/xxxxxx") 
 #NB the plys have been transformed to ASCII (from binary) so that landmarks can be visualised on the mesh 
-
+#See code 'Binary_ASCII_ply.R" if needed for this step
 
 ntaxa<-172 ## number of specimens (extant only) - NB can also put this in the code below (x,y,z) 
 #data set .pts from Checkpoint

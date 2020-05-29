@@ -17,3 +17,10 @@ fit<-gls(sum.radii ~ as.factor(age), correlation=corBrownian(phy=tree), data = d
 anova(fit)
 
 #Use corPagel for Pagal's lambda 
+
+#Adjusting for false positive results with Benjamini-Hochberg 
+#Post hoc tests - to check that this is not a false signal based on the large number
+#of models we have run
+
+p <- c(X.XX, X.XX, X.XX, X.XX, X.XX) # original p-values from ANOVAs 
+p.adjust(p,method="BH") #ouputed Benjamin-Hochberg corrected results 

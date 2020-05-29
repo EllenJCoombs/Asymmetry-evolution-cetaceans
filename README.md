@@ -38,13 +38,20 @@ In this repository you will find raw data (.csv files), analyses (details on ana
 - Details on analyses run e.g. links to papers, packages 
  :file_folder:
 * **Code for analyses**
-`Binary-ASCII-ply.R`//
-`LandvR.R`//
+`Binary-ASCII-ply.R`
+
+`LandvR.R`
+
 `Build-phylogeny.R`
+
 `Clavel-plotShifts.R`
+
 `Clavel-models-shifts-jump.R`
+
 `Discrete-trait-models.R`
+
 `Model-diagnostics.R` 
+
 `Phylo-ANOVAs`
 
 ## License :page_with_curl:

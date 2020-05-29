@@ -10,11 +10,11 @@ Morgan Churchill,
 Anjali Goswami 
 
 __To cite the paper__: 
-> 
+> NA
 Available at: 
 If using any of this code or data please cite the paper above and the repo
 __To cite this repo__: 
-> 
+> NA
 Github link + Zenodo
 <insert Zenodo badge> 
 

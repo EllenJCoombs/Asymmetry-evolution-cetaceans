@@ -16,7 +16,7 @@ If using any of this code or data please cite the paper above and the repo
 __To cite this repo__: 
 > 
 Github link + Zenodo
-Zenodo badge 
+<insert Zenodo badge> 
 
 ## Data :bar_chart: :chart_with_downwards_trend: 
 

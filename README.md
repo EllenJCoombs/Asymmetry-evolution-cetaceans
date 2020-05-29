@@ -53,7 +53,7 @@ In this repository you will find raw data (.csv files), analyses (details on ana
 
 `Model-diagnostics.R` 
 
-`Phylo-ANOVAs`
+`Phylo-ANOVAs.R`
 
 ## License :page_with_curl:
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/EllenJCoombs/Asymmetry-evolution-cetaceans/blob/master/LICENSE) file for details

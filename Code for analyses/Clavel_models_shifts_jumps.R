@@ -6,6 +6,11 @@ CODE CURRENTLY UNDER REVIEW - PLEASE DO NOT USE UNTIL CITATION HAS BEEN MADE
 #The first model focuses on 'shifts'
 #The second model focuses on 'jumps'
 
+#These models were run on:
+#1. the full landmark radii dataset
+#2. the landmark radii dataset with the rostrum landamrks removed 
+#3. the phylogeny that includes only species that appear in a character matrix 
+
 library(ape)
 library(coda) #mcmc
 library(geiger)

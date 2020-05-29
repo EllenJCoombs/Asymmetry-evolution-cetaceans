@@ -4,8 +4,8 @@
 
 __Authors:__
 [Ellen J. Coombs](mailto:ellen.coombs.14@ucl.ac.uk)
-[Julien Clavel] (https://github.com/JClavel)
-[Travis Park] (https://github.com/travispark)
+[Julien Clavel](https://github.com/JClavel)
+[Travis Park](https://github.com/travispark)
 Morgan Churchill 
 Anjali Goswami 
 

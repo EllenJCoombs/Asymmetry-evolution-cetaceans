@@ -22,7 +22,7 @@ Github link + Zenodo
 
 The data provided here are: 
 1. the raw radii data for each specimen (n = 172); split by suborder, with details on ranking 
-2. specimen data; ID, species, Family, geological age, echolocation frequency categories
+2. specimen data; ID, species, family, geological age, echolocation frequency categories
 3. Sum radii data for landmarks 67-123
 4. Data with rostrum removed 
 

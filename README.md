@@ -20,11 +20,17 @@ Github link + Zenodo
 
 ## Data :bar_chart: :chart_with_downwards_trend: 
 
+.xlsx documents have multiple tabs 
+.csv documents have single tabs 
+
+All data can be copy and converted to .csv for use in R
+
 The data provided here are: 
-1. the raw radii data for each specimen (n = 172); split by suborder, with details on ranking 
-2. specimen data; ID, species, family, geological age, echolocation frequency categories
-3. sum radii data for landmarks 67-123
-4. data with rostrum removed 
+1. `Raw radii data` - the raw radii data for each specimen (n = 172); split by suborder, with details on ranking (.xlsx)
+2. `Phylo names and regime data` - specimen data; ID, species, family, geological age, echolocation frequency categories (.csv) 
+3. `Landmark radii - all artiodactyls` - sum radii data for landmarks 67-123 (.csv)
+4. `Removal of rostrum` - data with rostrum removed (.xlsx)
+5. `Fossils removed` - data with fossils removed (.csv)
 
 ## Analysis :chart_with_upwards_trend: :whale2:
 In this repository you will find raw data (.csv files), analyses (details on analyses), code for analyses (code supplied as .R files)
@@ -33,6 +39,7 @@ In this repository you will find raw data (.csv files), analyses (details on ana
 - CSV name and description 
 - CSV name and description 
 - CSV name and description 
+
  :file_folder:
 * **Analyses**
 - Details on analyses run e.g. links to papers, packages 

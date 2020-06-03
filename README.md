@@ -23,8 +23,8 @@ Github link + Zenodo
 The data provided here are: 
 1. the raw radii data for each specimen (n = 172); split by suborder, with details on ranking 
 2. specimen data; ID, species, family, geological age, echolocation frequency categories
-3. Sum radii data for landmarks 67-123
-4. Data with rostrum removed 
+3. sum radii data for landmarks 67-123
+4. data with rostrum removed 
 
 ## Analysis :chart_with_upwards_trend: :whale2:
 In this repository you will find raw data (.csv files), analyses (details on analyses), code for analyses (code supplied as .R files)

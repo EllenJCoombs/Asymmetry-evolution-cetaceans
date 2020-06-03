@@ -25,7 +25,7 @@ Github link + Zenodo
 
 All data can be copy and converted to .csv for use in R
 
-The data provided in the `Raw data` folder
+The data are provided in the `Raw data` folder
 1. `Raw radii data` - the raw radii data for each specimen (n = 172); split by suborder, with details on ranking (.xlsx)
 2. `Phylo names and regime data` - specimen data; ID, species, family, geological age, echolocation frequency categories (.csv) 
 3. `Landmark radii - all artiodactyls` - sum radii data for landmarks 67-123 (.csv)

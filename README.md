@@ -24,7 +24,7 @@ Github link + Zenodo
 
 .csv documents have single tabs 
 
-All data can be copy and converted to .csv for use in R
+All data can be converted to .csv for use in R
 
 The data are provided in the `Raw data` folder
 1. `Raw radii data` - the raw radii data for each specimen (n = 172); split by suborder, with details on ranking (.xlsx)

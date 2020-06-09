@@ -22,14 +22,14 @@ colors <- setNames(c(rgb(255, 242, 127, 255, maxColorValue = 255),
                    c("Holocene", "Pleistocene", "Pliocene", "Miocene", "Oligocene", "Eocene"))
 
 
+leg <- rbind(c(0.011650, 0), c(2.58, 0.11650), c(5.33, 2.58), c(23.03, 5.33), c(33.9, 23.03), c(49.006, 33.9)) #epoch ages 
+
 rownames(leg) <- c("Holocene", "Pleistocene", "Pliocene", 
                    "Miocene", "Oligocene", "Eocene")
 
 colnames(leg) <- c("start", "end")
 
 object <- list(period = leg, cols = colors)
-
-leg <- rbind(c(0.011650, 0), c(2.58, 0.11650), c(5.33, 2.58), c(23.03, 5.33), c(33.9, 23.03), c(49.006, 33.9)) #epoch ages 
 
 epochs <- geo.legend(leg=leg, colors=colors, alpha=0.2)                       
 

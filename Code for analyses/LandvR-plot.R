@@ -5,6 +5,9 @@
 #install_github("TGuillerme/landvR")
 library(landvR)
 
+#Guillerme T, Weisbecker V. landvR: tools for measuring landmark position
+#variation. 2019. Zenodo. . https://doi.org/10.5281/zenodo.2620785
+
 setwd("C:/Users/carlb/Box Sync/Carla Bardua/Ellen_whales")
 
 load("./arranged_data.R")

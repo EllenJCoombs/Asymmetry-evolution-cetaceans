@@ -40,13 +40,8 @@ The data are provided in the `Raw data` folder
 In this repository you will find raw data (.csv files), analyses (details on analyses), code for analyses (code supplied as .R files)
  :file_folder:
 * **Raw data**
-- CSV name and description 
-- CSV name and description 
-- CSV name and description 
+- As above 
 
- :file_folder:
-* **Analyses**
-- Details on analyses run e.g. links to papers, packages 
  :file_folder:
 * **Code for analyses**
 

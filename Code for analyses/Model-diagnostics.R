@@ -1,5 +1,5 @@
 
-#Running model diagnostics from 'Clavel_model_shifts_jumps.R' and 'Discrete_trait_models.R'
+#Running model diagnostics from 'Clavel-model-shifts-jumps.R' and 'Discrete-trait-models.R'
 library(geiger)
 library(coda)
 ?coda.options

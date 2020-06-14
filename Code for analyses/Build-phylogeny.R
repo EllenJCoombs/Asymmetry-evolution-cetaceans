@@ -19,16 +19,16 @@ tip_bind <- function(tree, sp_names=NULL, interactive=TRUE, position = 0, where 
               edge.length = 0., Nnode = 1)
   class(tip) <- "phylo"
   
-  # bind the fake tip on the tree
+  #bind the fake tip on the tree
   plot(tree, cex = 0.5)
   tree_temp = bind.tree(tree, tip, interactive = interactive, position = position, where= where)
   
-  # Now that we have grafted our fake tree, we want to scale it's branch length so that the tip becomes an extant.
+  #Now that we have grafted our fake tree, we want to scale it's branch length so that the tip becomes an extant.
   node <- nodeHeights(tree_temp) # heights of the nodes
   index = which(tree_temp$edge[,2]==which(tree_temp$tip.label==sp_names))
   diff_length = max(node) - node[index,2]
   
-  # Now we add this difference (between the tip and present time)
+  #Now we add this difference (between the tip and present time)
   tree_temp$edge.length[index] = tree_temp$edge.length[index] + diff_length
   
   # we return the transformed tree
@@ -52,7 +52,6 @@ tree10 = tip_bind(tree9, 'Sousa_sahulensis', interactive=TRUE)
 # plot the new tree
 plot(tree10, cex = 0.5)
 axisPhylo()
-
 
 write.tree(tree10, file = 'tree10.tre')
 write.nexus(tree10, file = 'tree10.nexus')

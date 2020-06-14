@@ -36,7 +36,7 @@ The data are provided in the `Raw data` folder
 1. `Raw radii data` - the raw radii data for each specimen (n = 172); split by suborder, with details on ranking (.xlsx)
 2. `Phylo names and regime data` - specimen data; ID, species, family, geological age, echolocation frequency categories (.csv) 
 3. `Landmark radii - all artiodactyls` - sum radii data for landmarks 67-123 (.csv)
-4. `Removal of rostrum` - data with rostrum removed (.xlsx)
+4. `Rostrum removed` - data with rostrum removed (.xlsx)
 5. `Fossils removed` - data with fossils removed (.xlsx)
 
 ## Analysis :chart_with_upwards_trend: :whale2:

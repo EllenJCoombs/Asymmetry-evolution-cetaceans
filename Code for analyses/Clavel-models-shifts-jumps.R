@@ -42,14 +42,14 @@ data <- data[subtree_unroot1$tip.label, ] #this takes the label from the dataset
 data <- as.vector(data$sum.radii) #pulls out a vector (not matrix) using the $ sign - just the radii here 
 names(data) = subtree_unroot1$tip.label
 
-# Set parameters 
+#Set parameters 
 prop = 1.5        # tuning parameter for the proposal window (it's just a starting value it will be improved in the model fit I think)
 iterations = 10e6  # number of iterations for the chain (5 million)
 sampling = 10000   # sampling frequency of the parameters (i.e. when you store the parameter along the chain)
 model = "rbm"     # relaxed brownian motion (the model used in Eastman et al. 2011. More or less similar to BayesTrait)
 filename = paste("testmcmc-rjmcmcREARRANGED.log", sep="", collapse="")
 
-# Half-Cauchy distribution (see also Gelman 2006) - I used it for the prior density of the rate scalar instead of the default exponential distribution
+#Half-Cauchy distribution (see also Gelman 2006) - I used it for the prior density of the rate scalar instead of the default exponential distribution
 dhalfCauchy <- function(x, scale=1, log=F){
  if(any(x<0)) return(-Inf)
  density <- 2 /(pi * (1+(x/scale)^2))
@@ -61,11 +61,11 @@ dhalfCauchy <- function(x, scale=1, log=F){
 ratePrior <- function(x) dhalfCauchy(x, 25, log=TRUE)
 sePrior <- function(x) dhalfCauchy(x, 25, log=TRUE)
 
-# run the rjmcmc
+#run the rjmcmc
 rjmcmc.bm(tree_rearranged, data, prop.width=prop, ngen=iterations, samp=sampling, filebase=filename,
          simple.start=TRUE, type=model, dlnRATE=ratePrior, dlnSE=sePrior) # note: here I assume you're estimating a nuisance parameter as well
 
-# retrieve the chain
+#retrieve the chain
 chain_rearranged <- load.rjmcmc("relaxedBM.testmcmc-rjmcmcREARRANGED.log")
 
 result=plot(chain_rearranged, par="shift", type= "fan", legend = F, cex = 0.6)
@@ -81,7 +81,7 @@ plot(mcmc(chain$log[,8]))#for caterpillar plot
 #shifts are cladewise 
 plotShifts(reorder(subtree_unroot1,"cladewise") , chain=result$median.rates, color=c("blue","light blue", "green", "yellow", "orange", "dark orange", "red"))
 
-# plot the trace of the chain
+#plot the trace of the chain
 plot(mcmc(chain$log[,1:3]))
 
 #Running the tree with the traits on the branches - by colour 
@@ -125,18 +125,18 @@ data <- data[subtree_unroot1$tip.label, ] #this takes the label from the dataset
 data <- as.vector(data$sum.radii) #pulls out a vector (not matrix) using the $ sign - just the radii here 
 names(data) = subtree_unroot1$tip.label
 
-# Some parameters
+#Some parameters
 prop = 1.5        # tuning parameter for the proposal window (it's just a starting value it will be improved in the model fit I think)
 iterations = 10e6  # number of iterations for the chain
 sampling = 10000 
 model = "jump-rbm"     # relaxed brownian motion (the model used in Eastman et al. 2011. More or less similar to BayesTrait)
 filename2 = paste("relaxedBM.testmcmc-jumprjmcmcREARRANGED.log", sep="", collapse="")
 
-# run the rjmcmc
+#run the rjmcmc
 rjmcmc.bm(tree_rearranged, data, prop.width=prop, ngen=iterations, samp=sampling, filebase=filename2,
           simple.start=TRUE, type=model) # note: here I assume you're estimating a nuisance parameter as well
 
-# retrieve the chain
+#retrieve the chain
 chain_rearranged2 <- load.rjmcmc("jump-relaxedBM.relaxedBM.testmcmc-jumprjmcmcREARRANGED.log")
 
 result=plot(chain210, par="shift", legend = F, cex = 0.6)
@@ -154,7 +154,7 @@ result=plot(chain_rearranged2, par="jumps", type = "fan", legend = F, cex = 0.6)
 #Looking at jump probability
 plotShifts(reorder(subtree_unroot1,"cladewise") , chain=result$jump.probability, color=c("blue","green","orange","red"))
 
-# plot the trace of the chain
+#plot the trace of the chain
 plot(mcmc(chain210$log[,1:3]))
 plot(mcmc(chain210$jumps[,1:3]))
 

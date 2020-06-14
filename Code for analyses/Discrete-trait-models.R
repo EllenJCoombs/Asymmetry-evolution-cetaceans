@@ -18,7 +18,6 @@ library(geiger)
 library(phytools)
 library(mvMORPH)
 
-
 #Function to transform ancestral states reconstruction to a SIMMAP like tree (to be added to mvMORPH)
 paintAllTree <- function(tree, ancestral, tips){
 

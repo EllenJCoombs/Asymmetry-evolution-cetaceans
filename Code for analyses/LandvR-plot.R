@@ -13,7 +13,7 @@ setwd("C:/Users/carlb/Box Sync/Carla Bardua/Ellen_whales")
 load("./arranged_data.R")
 load("./MirroredAC_data.R")
 
-## first, find the coord differences for all specimens
+##first, find the coord differences for all specimens
 N=123 #number of landmarks 
 specs=172 #number of specimens 
 all_combined=array(dim=c(N,3,specs)) #3 is the columns of data we need (radii, azimuth, polar)
@@ -37,7 +37,7 @@ odontocetes=which(species_data$suborder=="odontocete")
 archaeocete=which(species_data$suborder=="archaeocete")
 mysticete=which(species_data$suborder=="mysticete")
 
-## now for each group, find the mean of the arranged data, mirrored data and coord diffs
+##now for each group, find the mean of the arranged data, mirrored data and coord diffs
 myst_arranged_data=arranged_data[,,mysticete]
 myst_arranged_data_mean=apply(myst_arranged_data, c(1,2), mean)
 myst_MirroredAC_data=MirroredAC_data[,,mysticete]
@@ -61,18 +61,18 @@ arch_all_combined_mean=apply(arch_all_combined, c(1,2), mean)
 
 all_means=abind::abind(arch_all_combined_mean, odont_all_combined_mean, myst_all_combined_mean, 
                        along=3)
-dim(all_means) ## should be 123,3,3 as 3 means
+dim(all_means) ##should be 123,3,3 as 3 means
 
 radius = 1 # i.e 1 = radius, 2 = azimuth, 3 = polar
 min(all_means[,radius,]) 
 max(all_means[,radius,]) 
-## use these to manually input range of b, round up a little for max value to make sure it's covered by the range
+##use these to manually input range of b, round up a little for max value to make sure it's covered by the range
 ii <- cut(all_means[,radius,], b = 0:0.0125, breaks = 100,
           include.lowest = TRUE)
 
 length(ii) ## e.g. length of 3 groups would be 3*123=369
 
-## assign colours
+##assign colours
 n_cols=100 ## 100 as 100 breaks- can change this
 colors <-  colorRampPalette(c("white","yellow", "red"))(n_cols)[ii]
 

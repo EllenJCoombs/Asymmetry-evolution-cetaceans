@@ -32,16 +32,16 @@ plotShifts <-
       if(args$log==TRUE) meanRate <- log(chain)
     }
     
-    # check the order of the tree; prunning algorithm use "postorder"
-    # if(attr(phylo,"order")!="postorder") phylo <- reorder.phylo(phylo, "postorder")
+    #check the order of the tree; prunning algorithm use "postorder"
+    #if(attr(phylo,"order")!="postorder") phylo <- reorder.phylo(phylo, "postorder")
     
-    # colors mapping
+    #colors mapping
     if(any(args$palette==FALSE)){
       Colors = colorRampPalette(args$color)( 100 )
     }else{
       Colors = args$palette
     }
-    # 0 index induce error I scale it between 1 and 100
+    #0 index induce error I scale it between 1 and 100
     linScale <- function(x, from, to) round( (x - min(x)) / max(x - min(x)) * (to - from) + from)
     col <- linScale(meanRate, from=1, to=100)
     

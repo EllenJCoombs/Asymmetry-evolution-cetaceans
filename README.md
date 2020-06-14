@@ -10,13 +10,13 @@ Morgan Churchill,
 Anjali Goswami 
 
 __To cite the paper__: 
-Coombs EJ, Clavel J, Park T, Churchill M, Goswami A. Wonky whales: The evolution of cranial asymmetry in cetaceans. BMC Biology. 
+>Coombs EJ, Clavel J, Park T, Churchill M, Goswami A. Wonky whales: The evolution of cranial asymmetry in cetaceans. BMC Biology. 
 
 Available at: 
 If using any of this code or data please cite the paper above and the repo
 __To cite this repo__: 
 
-Coombs EJ, Clavel J, Park T, Churchill M, Goswami A. Wonky whales: The evolution of cranial asymmetry in cetaceans. BMC Biology. 
+>Coombs EJ, Clavel J, Park T, Churchill M, Goswami A. Wonky whales: The evolution of cranial asymmetry in cetaceans. BMC Biology. 
 Github: https://github.com/EllenJCoombs/Asymmetry-evolution-cetaceans. Published version: v 1.0 Zenodo: 
 
 <insert Zenodo badge> 

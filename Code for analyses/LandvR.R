@@ -3,8 +3,8 @@
 #landvR: Tools for measuring landmark position variation. Zenodo. doi:10.5281/zenodo.2620785
 
 #Looking at asymmetry in odontocetes, mysticetes, archaeocetes, and terrestrial artiodactyls
-# Run for all specimens (172) 
-# Average specimen also 
+#Run for all specimens (172) 
+#Average specimen also 
 
 #Code to run to pull out radii for assessing asymmetry in cetaceans
 
@@ -367,7 +367,7 @@ library(viridis)
 library(ggfortify)
 library(RColorBrewer)
 
-
+#plot
 a <- ggplot(Landradii, aes(PC1, PC2, col = suborder, fill = suborder, labels = TRUE)) + 
   geom_point(shape = 21) + 
   xlab('PC 1 (XX.X%)') + 

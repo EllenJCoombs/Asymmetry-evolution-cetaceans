@@ -1,5 +1,7 @@
 
-#Running all analyses on Slater and Lloyd's 'EXCLUDE' tree
+#Running all analyses on Lloyd and Slater's 'EXCLUDE' tree - please use Lloyd and Slater reference if using these phylogenies: 
+#Lloyd GT and Slater GJ (in prep). A total-group phylogenetic metatree of
+#Cetacea and the importance of fossil data in diversification analyses
 
 treeEXCLUDE <- read.tree('Exclude_map.tre')
 #read in sum radii for specimens 
@@ -15,7 +17,6 @@ treeEXCLUDE_trim <- drop.tip(tree, c("Orycternocetus_crocodilinus", "Mesoplodon_
 "Schizodelphis_squalodontoides", "Patriocetid_new_genus_ChM_PV4753", "Patriocetus_sp_MB_Ma._42882", "Balaenoptera_floridana", 
 "Balaenoptera_colcloughi", "Pakicetus_attocki", "Neophocaena_asiaeorientalis", "Orcaella_heinsohni", "Cephalorhynchus_hectori_maui", 
 "Mesoplodon_hotaula", "Sousa_plumbea", "Sousa_teuszii", "Sousa_sahulensis")) ## drop species in tree but NOT from data
-
 
 write.nexus(treeEXCLUDE_trim, file = 'treeEXCLUDE_trim.nexus')
 plot(treeEXCLUDE_trim, cex = 0.6)

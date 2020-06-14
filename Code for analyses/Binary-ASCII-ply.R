@@ -1,6 +1,4 @@
 
-
-#This makes nice 3D outputs of the files for publications as well (such as the M.Mirus)
 #script for converting binary to ASCII .ply files
 #rm(list=ls())
 
@@ -40,15 +38,14 @@ checkLM(newpts,path="./ply/",suffix=".ply",pt.size=1,render="s",alpha=1)
 #========================================================================================
 
 #For taking a snapshot for publications 
-#nstall.packages('Morpho')
+#install.packages('Morpho')
 library(Morpho)
 library(rgl)
 
 #don't forget .ply
-
 Lissodelphis=ply2mesh(file="X:xxxxx/ply/Lissodelphis borealis USNM 550188.ply")
 
 shade3d(Lissodelphis, col="white") #"white" or bone1 (don't use the "" for the latter)
-rgl.snapshot(filename = "X:xxxxx/ply/Lissodelphis borealis USNM 550188.png")#the object name and then underscore followed by the new file name 
+rgl.snapshot(filename = "X:xxxxx/ply/Lissodelphis borealis USNM 550188.png") #the object name and then underscore followed by the new file name 
 
 

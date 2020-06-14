@@ -52,19 +52,25 @@ As above
 
 `Binary-ASCII-ply.R`
 
-`LandvR.R`
-
 `Build-phylogeny.R`
-
-`Clavel-plotShifts.R`
 
 `Clavel-models-shifts-jump.R`
 
+`Clavel-plotShifts.R`
+
 `Discrete-trait-models.R`
+
+`EXCLUDE-tree-Lloyd-and-Slater.R`
+
+`LandvR-plot.R`
+
+`LandvR.R`
 
 `Model-diagnostics.R` 
 
-`Phylo-ANOVAs.R`
+`Phylo-ANOVAs_Bnejamini-Hochberg.R`
+
+`Plotting-with-timescales.R`
 
 ## License :page_with_curl:
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/EllenJCoombs/Asymmetry-evolution-cetaceans/blob/master/LICENSE) file for details

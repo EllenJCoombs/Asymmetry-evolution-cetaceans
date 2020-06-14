@@ -20,7 +20,9 @@ If using any of this code or data please cite the paper above and this repo
 __To cite this repo__: 
 
 >Coombs EJ, Clavel J, Park T, Churchill M, Goswami A. Wonky whales: The evolution of cranial asymmetry in cetaceans. BMC Biology. 2020.
-Github: https://github.com/EllenJCoombs/Asymmetry-evolution-cetaceans plus the Zenodo DOI.
+Github: https://github.com/EllenJCoombs/Asymmetry-evolution-cetaceans plus the Zenodo DOI: https://doi.org/10.5281/zenodo.3893943
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3893943.svg)](https://doi.org/10.5281/zenodo.3893943)
 
 
 ## Data :bar_chart: :chart_with_downwards_trend: 

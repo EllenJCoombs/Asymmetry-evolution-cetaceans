@@ -147,7 +147,7 @@ result=plot(chain_rearranged2, par="jumps", type = "fan", legend = F, cex = 0.6)
 
 ###############################################
 #                                             #
-#  Be sure to have run 'Clavel_plotShifts.R'  #
+#  Be sure to have run 'Clavel-plotShifts.R'  #
 #                                             #
 ###############################################
 

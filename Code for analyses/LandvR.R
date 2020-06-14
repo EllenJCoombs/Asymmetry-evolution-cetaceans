@@ -216,12 +216,10 @@ shapes3d(Y.gpa$coords[,,1], color=col)
 
 #==========
 
-
 if(!require(devtools)) install.packages("devtools")
 library(devtools)
 install_github("TGuillerme/landvR")
 library(landvR)
-
 
 ############# LANDVR ###################
 #Check the values
@@ -290,7 +288,6 @@ radii=all_combined[,1,] #second coloumn of whole dataset with just the radii [,1
 get.col.spectrum <- landvR::procrustes.var.plot(arranged_data[,,9], Mirrored_data[,,9], col.val = radii_mean, col = colfunc)
 #datcol2<-c(rep("black",66),get.col.spectrum)
 #open3d()
-
 
 #############################
 #                           #

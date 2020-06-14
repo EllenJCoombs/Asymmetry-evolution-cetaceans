@@ -2,6 +2,7 @@
 #Plotting the phylogeny with Epoch/timescale data
 #Timescales are from Lloyd GT and Slater GJ (in prep) 
 #A Total-Group Phylogenetic Metatree of Cetacea and the Importance of Fossil Data in Diversification Analyses.
+#Please site the above if using their phylogeny - we trimmed Lloyd and Slater's phylogeny to our specimens (162)
 
 library(plotrix)
 library(phytools)

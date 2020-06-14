@@ -1,6 +1,5 @@
 
-
-CODE CURRENTLY UNDER REVIEW - PLEASE DO NOT USE UNTIL CITATION HAS BEEN MADE 
+#This code belongs to Julien Clavel - please reference accordingly (mvMORPH) as well as the paper here if used - see README
 
 #Running evolutionary models on traits (asymmetry)
 #The first model focuses on 'shifts'

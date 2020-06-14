@@ -38,6 +38,7 @@ The data are provided in the `Raw data` folder
 
 ## Analysis :chart_with_upwards_trend: :whale2:
 In this repository you will find raw data (.csv files), analyses (details on analyses), code for analyses (code supplied as .R files)
+
  :file_folder:
 * **Raw data**
 

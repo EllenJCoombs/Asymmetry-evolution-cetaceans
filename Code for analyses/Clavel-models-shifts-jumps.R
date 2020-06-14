@@ -10,6 +10,8 @@
 #2. the landmark radii dataset with the rostrum landamrks removed 
 #3. the phylogeny that includes only species that appear in a character matrix 
 
+#Be sure to have run 'Clavel-plotShifts.R' first
+
 library(ape)
 library(coda) #mcmc
 library(geiger)
@@ -57,7 +59,7 @@ dhalfCauchy <- function(x, scale=1, log=F){
  return(density/scale)
 }
 
-# Define priors for the hyperparameter and measurment error (SE)
+#Define priors for the hyperparameter and measurment error (SE)
 ratePrior <- function(x) dhalfCauchy(x, 25, log=TRUE)
 sePrior <- function(x) dhalfCauchy(x, 25, log=TRUE)
 
@@ -70,7 +72,7 @@ chain_rearranged <- load.rjmcmc("relaxedBM.testmcmc-rjmcmcREARRANGED.log")
 
 result=plot(chain_rearranged, par="shift", type= "fan", legend = F, cex = 0.6)
 
-#Extra things from Ryan Felice to look at trace of the chain 
+#Extra code from Ryan Felice to look at trace of the chain 
 mcmc(chain110$log) #which column do you want to look at? 
 #plot the trace of the chain 
 plot(mcmc(chain$log[,8]))#for caterpillar plot 

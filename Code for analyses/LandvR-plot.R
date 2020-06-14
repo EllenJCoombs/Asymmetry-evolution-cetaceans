@@ -6,9 +6,9 @@
 library(landvR)
 
 #Guillerme T, Weisbecker V. landvR: tools for measuring landmark position
-#variation. 2019. Zenodo. . https://doi.org/10.5281/zenodo.2620785
+#variation. 2019. Zenodo: https://doi.org/10.5281/zenodo.2620785
 
-setwd("C:/Users/carlb/Box Sync/Carla Bardua/Ellen_whales")
+setwd("X:/xxx/xxx/xxx")
 
 load("./arranged_data.R")
 load("./MirroredAC_data.R")

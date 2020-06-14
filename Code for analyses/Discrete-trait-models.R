@@ -63,7 +63,7 @@ tree$edge.length[which(tree$edge.length == 0)] = 1e-5
 #fit3<-ace(sta,dst,type="discrete",model="ER")
 #fit3
 
-#Hypothesis1 
+#hypothesis1 
 #ancestral state reconstruction (you can change the model to the complex ARD or the simple ER)
 fitSYMTEST<-ace(sta, tree, model="ER", type="discrete")
 

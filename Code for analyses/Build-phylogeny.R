@@ -42,7 +42,7 @@ library(phytools)
 plot(subtree, cex = 0.4) #check
 tree2 = tip_bind(subtree, 'Neophocaena_asiaeorientalis', interactive=TRUE)
 tree3 = tip_bind(tree2, 'Orcaella_heinsohni', interactive=TRUE)
-tree4 = tip_bind(tree3, 'Tursiops_truncatus_gilli', interactive=TRUE)
+#tree4 = tip_bind(tree3, 'Tursiops_truncatus_gilli', interactive=TRUE)
 tree5 = tip_bind(tree4, 'Berardius_minimus', interactive=TRUE)
 tree6 = tip_bind(tree5, 'Cephalorhynchus_hectori_maui', interactive=TRUE)
 tree7 = tip_bind(tree6, 'Mesoplodon_hotaula', interactive=TRUE)
@@ -57,7 +57,7 @@ axisPhylo()
 write.tree(tree10, file = 'tree10.tre')
 write.nexus(tree10, file = 'tree10.nexus')
 #Changing names in the phylo 
-# search for the tips you want to change
+#search for the tips you want to change
 tree10$tip.label[which(tree10$tip.label=="Berardius_minimus")] = "Berardius_sp"
 #check
 plot(tree10, cex = 0.4)

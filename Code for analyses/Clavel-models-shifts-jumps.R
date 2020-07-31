@@ -19,7 +19,7 @@ library(phytools)
 library(mvMORPH) #contmap 
 library(evobiR) # to reorder data
 
-setwd("D:/Checkpoint - ICVM/Asymmetry project")
+setwd("X:/xxxx/xxxx")
 #Read in subtree 
 tree <- read.nexus('tree10.nexus')
 #read in sum radii for specimens or your trait data 

@@ -60,3 +60,9 @@ write.nexus(tree10, file = 'tree10.nexus')
 tree10$tip.label[which(tree10$tip.label=="Berardius_minimus")] = "Berardius_sp"
 #check
 plot(tree10, cex = 0.4)
+
+#Look at original with timeline
+plot(tree10, cex = 0.4)
+axisPhylo()
+
+

@@ -45,7 +45,7 @@ library(rgl)
 #don't forget .ply
 Lissodelphis=ply2mesh(file="X:xxxxx/ply/Lissodelphis borealis USNM 550188.ply")
 
-shade3d(Lissodelphis, col="white") #"white" or bone1 (don't use the "" for the latter)
+shade3d(Lissodelphis, col="white") #"white" or bone1 (don't use the "" for the latter) can use bone2 or bone3 also
 rgl.snapshot(filename = "X:xxxxx/ply/Lissodelphis borealis USNM 550188.png") #the object name and then underscore followed by the new file name 
 
 

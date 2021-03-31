@@ -61,7 +61,7 @@ tree10$tip.label[which(tree10$tip.label=="Berardius_minimus")] = "Berardius_sp"
 #check
 plot(tree10, cex = 0.4)
 
-#Look at original with timeline
+#Look at original with timeline to check the new specimens have been added 
 plot(tree10, cex = 0.4)
 axisPhylo()
 

@@ -161,14 +161,13 @@ arraylmAC <- estimate.missing(arraylmAC,method="TPS")
 
 #MIRROR THESE LANDMARKS over the central line plane of the skull 
 
-########## SYMETRISATION TO IMPROVE THE SHAPE ANALYSES #########################
+########## SYMMETRISATION TO IMPROVE THE SHAPE ANALYSES #########################
 #Ellen's code 
 
 midline<-as.integer(c(38,40,48,49,51,54,55,56,61)) # LM that are on the midline + parasphenoid curve points + NO patch point
 #got length(midline)= 9 points on the midline
 
 left.lm <- c(1:37,39,41:47,50,52,53,57:60,62:66)
-#left.lm <- c(2,3,5:18,21:37,39,41:47,50,52,53,57:60,62:66)
 #exclude midline points. Last number = last number of newpts 
 
 lengmatrice=dim(arraylmAC)[1]*2-length(midline)#-length(nasalfrontal) #should be the length with the both sides, 1 is the column and 2 
@@ -182,8 +181,8 @@ Matrice[1:dim(arraylmAC)[1],,]=arraylmAC
 #exclude midline points. Last number = last number of newpts 
 
 #Check left.lm and midline [left.lm,,x] = species number
-spheres3d(arraylmAC[left.lm,,10],radius=4)
-spheres3d(arraylmAC[midline,,10],radius=5,col='red')
+spheres3d(arraylmAC[left.lm,,10],radius=4) #left LMs
+spheres3d(arraylmAC[midline,,10],radius=5,col='red') #midline
 
 right.lm <- c(67:123) #left.lm +1:lenmatrice
 

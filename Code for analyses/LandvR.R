@@ -52,7 +52,7 @@ PCA=plotTangentSpace(all_array, axis1=1, axis2=2, label=dimnames(data)[[3]])
 #========================================#
 
 
-###=========== LOADING DATA SET 1: WHOLE LANDMAKRED SKULL 
+###=========== LOADING DATA SET 1: WHOLE LANDMARKED SKULL 
 #Read in landmarks manually placed on the whole skull 
 
 ntaxa<-172 ## number of specimens (extant only) - NB can also put this in the code below (x,y,z) 

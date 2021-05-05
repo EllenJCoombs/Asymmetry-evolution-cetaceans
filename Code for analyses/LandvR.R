@@ -59,7 +59,7 @@ ntaxa<-172 ## number of specimens (extant only) - NB can also put this in the co
 #data set .pts from Checkpoint
 
 ptslist<-dir(pattern='.pts',recursive=T)
-ptsarray<-array(dim=c(123,3,32)) #dim=c(number of landmarks and semilandmarks, number of dimensions, number of specimens)
+ptsarray<-array(dim=c(123,3,172)) #dim=c(number of landmarks and semilandmarks, number of dimensions, number of specimens)
 for(i in 1:length(ptslist))
 {
   ptsarray[,,i]<-as.matrix(read.table(file=ptslist[i],skip=2,header=F,sep="",row.names=1))
@@ -69,7 +69,7 @@ for(i in 1:length(ptslist))
 #[3] stays the same 
 dimnames(ptsarray)[3]<-list(
   substr(dir("./ply",pattern=".ply"),1,(nchar(dir("./ply",pattern=".ply"))-4)))
-arraylm<-ptsarray
+arraylm<-ptsarray #this is your array
 
 
 ##### MISSING LANDMARKS #########

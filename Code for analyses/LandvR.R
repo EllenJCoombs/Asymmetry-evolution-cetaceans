@@ -68,7 +68,7 @@ for(i in 1:length(ptslist))
 #Need the .plys for this 
 #[3] stays the same 
 dimnames(ptsarray)[3]<-list(
-  substr(dir("./ply",pattern=".ply"),1,(nchar(dir("./ply",pattern=".ply"))-4)))###donne nom de scan a ptsarray et -4 pour retirer derniere lettre de nom
+  substr(dir("./ply",pattern=".ply"),1,(nchar(dir("./ply",pattern=".ply"))-4)))
 arraylm<-ptsarray
 
 

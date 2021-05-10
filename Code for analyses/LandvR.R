@@ -237,7 +237,7 @@ differences_between_lms <- coordinates.difference(coordinates = MirroredAC_data[
                                                   rounding = 9)
 
 #Remove errornous missing landmarks (these should be zero because they are static)
-differences_between_lms[[1]][1:66, 1:166] <- c(0.000000, 0.000000, 0.000000)
+differences_between_lms[[1]][1:66, 1:3] <- c(0.000000, 0.000000, 0.000000)
 
 
 #Ellen's own colour function 
@@ -271,8 +271,7 @@ for (i in 1:specs)
 
 
 #55, 56, 57, 59, 60 are all missing data and should be zero 
-#Is there a better way of doing this? 
-all_combined[1:66, 1:3, 1:166] <- c(0.000000, 0.000000, 0.000000)
+all_combined[1:66, 1:3] <- c(0.000000, 0.000000, 0.000000)
 #write.csv(all_combined, file = 'all_combined.csv')
 
 radii=all_combined[,1,] #looking at the second column (usually x,y,z) but here it is the radii, aziumuth, and polar 

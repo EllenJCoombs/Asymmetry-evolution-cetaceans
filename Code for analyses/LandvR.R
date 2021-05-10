@@ -173,7 +173,7 @@ left.lm <- c(1:37,39,41:47,50,52,53,57:60,62:66)
 lengmatrice=dim(arraylmAC)[1]*2-length(midline)#-length(nasalfrontal) #should be the length with the both sides, 1 is the column and 2 
 #just means that we are duplicating the data to be on both sides of the skull 
 
-Matrice=array(NA,dim = c(lengmatrice,3,24)) #3 is the dimensions (x, y, z), 2 is specimen number 
+Matrice=array(NA,dim = c(lengmatrice,3,172)) #3 is the dimensions (x, y, z), 2 is specimen number 
 Matrice[1:dim(arraylmAC)[1],,]=arraylmAC
 
 #left.lm <- c(1:37,39,41:47,50,52,53,57:60,62:66)

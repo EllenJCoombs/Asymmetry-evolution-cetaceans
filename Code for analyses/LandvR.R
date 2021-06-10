@@ -253,7 +253,7 @@ test
 
 ##### LOOKING AT AN AVERAGE SPECIMEN ######
 N=123 #number of landmarks 
-specs=166 #number of specimens 
+specs=162 #number of specimens 
 all_combined=array(dim=c(N,3,specs)) #3 is the columns of data we need (radii, azimuth, polar)
 
 i=1
@@ -271,15 +271,15 @@ for (i in 1:specs)
 
 
 #55, 56, 57, 59, 60 are all missing data and should be zero 
-all_combined[1:66, 1:3] <- c(0.000000, 0.000000, 0.000000)
+all_combined[1:66, 1:3, 1:162] <- c(0.000000, 0.000000, 0.000000)
 #write.csv(all_combined, file = 'all_combined.csv')
 
 radii=all_combined[,1,] #looking at the second column (usually x,y,z) but here it is the radii, aziumuth, and polar 
 radii_mean=apply(radii, c(1), mean) #c(1) looking at the first column which is the radii 
-#test=all_combined[[1]][,,1] #this is a test for sepcimen 1 to look at the differences between lms 
+#test=all_combined[[1]][,,1] #this is a test for specimen 1 to look at the differences between lms 
 #test
 
-radii=all_combined[,1,] #second coloumn of whole dataset with just the radii [,1,]
+radii=all_combined[,1,] #second column of whole dataset with just the radii [,1,]
 
 
 #Looking at the average radii compared to specimen 21 (or an average specimen)

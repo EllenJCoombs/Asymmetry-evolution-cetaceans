@@ -20,4 +20,4 @@ anova(fit)
 #of models we have run
 
 p <- c(X.XX, X.XX, X.XX, X.XX, X.XX) # original p-values from ANOVAs 
-p.adjust(p,method="BH") #ouputed Benjamin-Hochberg corrected results 
+p.adjust(p,method="BH") #ouputed Benjamini-Hochberg corrected results 

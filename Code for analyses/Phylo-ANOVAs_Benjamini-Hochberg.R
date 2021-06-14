@@ -10,7 +10,7 @@ library(ape)
 library(nlme)
 
 #Do this for all of the different 'regimes' 
-fit<-gls(sum.radii ~ as.factor(age), correlation=corBrownian(phy=tree), data = data) # or better use corPagel
+fit<-gls(sum.radii ~ as.factor(age), correlation=corPagel(phy=tree), data = data) # can use corBrownian
 anova(fit)
 
 #Use corPagel for Pagal's lambda 

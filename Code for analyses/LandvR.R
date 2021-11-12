@@ -34,7 +34,7 @@ plotRefToTarget(ptsarray[,,1],MirroredAC[,,1],method="vector")
 
 
 #=========== Combine datasets (AB and AC) to look at morphospace 
-
+#This is an extra nice step to view the morphospace if desired. If not head to '1. READ IN THE MANUAL LMS'
 
 all_array <- abind(ptsarray, MirroredAC, along = 3)
 

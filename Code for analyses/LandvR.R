@@ -11,7 +11,6 @@
 library(Rvcg)
 library(rgl)
 library(Morpho)
-library(rgl)
 library(geomorph)
 library(paleomorph)
 
